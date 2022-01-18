@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080></canvas>
+      <canvas id="unity-canvas" width=2560 height=1440></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Version0.2.loader.js";
+      var loaderUrl = buildUrl + "/Version1_1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Version0.2.data",
-        frameworkUrl: buildUrl + "/Version0.2.framework.js",
-        codeUrl: buildUrl + "/Version0.2.wasm",
+        dataUrl: buildUrl + "/Version1_1.data",
+        frameworkUrl: buildUrl + "/Version1_1.framework.js",
+        codeUrl: buildUrl + "/Version1_1.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Department of Product and Systems Design Engineering",
+        companyName: "GREEK VENOM S.A.",
         productName: "Space Shooter",
-        productVersion: "0.2",
+        productVersion: "1.0.0",
         showBanner: unityShowBanner,
       };
 
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "2560px";
+        canvas.style.height = "1440px";
       }
       loadingBar.style.display = "block";
 
